@@ -169,6 +169,20 @@ body[data-theme=dark] .story,body[data-theme=dark] .choice{filter:invert(1) hue-
 .sprite-bottle i:before{content:"";display:block;width:28px;height:14px;margin:-14px auto 0;border-radius:5px 5px 0 0;background:#2f8c64}
 .sprite-bottle i:after{content:"雪碧";display:block;margin-top:35px;color:#fff;font-weight:800;transform:rotate(-12deg)}
 .sprite-bottle span{font-size:.76rem}
+.jie-archive{margin-top:30px;padding:18px;border:1px solid #d9b5ff;border-radius:26px;background:linear-gradient(135deg,#f8eeffdd,#e7e4ffcc);box-shadow:0 16px 38px #785ca526}
+.jie-profile{border-color:#c99be9aa;background:linear-gradient(135deg,#f8edff,#ffffffc4 56%,#e5d7ffcc)}
+.jie-profile small,.jie-profile em{color:#7d4c9c}
+.jie-badge{border-color:#cda4ec88;background:#f7e9ff;color:#7d4c9c}
+.jie-space{position:fixed;z-index:34;inset:0;display:grid;place-items:center;overflow:auto;padding:20px;color:#fff;background:radial-gradient(circle at center,#5d2882,#211535 52%,#090612)}
+.jie-space:before,.jie-space:after{content:"";position:absolute;width:72vmax;height:72vmax;border:3px solid #b969ff66;border-radius:50%;animation:portal-spin 10s linear infinite}
+.jie-space:after{width:45vmax;height:45vmax;border-color:#7cdfff55;animation-direction:reverse;animation-duration:7s}
+.jie-portal{position:absolute;width:28vmax;height:28vmax;border-radius:50%;background:radial-gradient(circle,#a7e9ff77,#b15cff44 40%,transparent 68%);filter:blur(8px)}
+.jie-card{position:relative;z-index:2;width:min(660px,94vw);padding:22px;text-align:center;border:2px solid #e5c6ffcc;border-radius:24px;background:#1e102fe8;box-shadow:0 24px 90px #0009}
+.jie-card img{width:190px;height:145px;object-fit:cover;border:4px solid #ffffffdd;border-radius:18px;box-shadow:0 12px 28px #0008}
+.jie-card h1{margin:.35rem 0;color:#fff080;font-size:clamp(2rem,7vw,4.8rem);line-height:1.08;text-shadow:3px 3px #6e387c}
+.jie-card .options{margin-top:16px}
+.jie-result .jie-card h1{font-size:clamp(1.8rem,5vw,3.5rem)}
+@keyframes portal-spin{from{transform:rotate(0) scale(.84)}to{transform:rotate(360deg) scale(1.08)}}
 @media(max-width:760px){.shell{padding-top:20px}
 .home-glass{padding:0}
 .home-glass:after{inset:-8px;border-radius:28px}

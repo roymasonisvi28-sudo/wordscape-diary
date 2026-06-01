@@ -14,6 +14,7 @@
     characters: Object.fromEntries(DATA.characters.map(c => [c.id, { affection: 0, trust: 0, resonance: 0, events: [] }])),
     banana: { affection: 0, wrong: 0, encounters: 0, checkedChapters: {} },
     avalanche: { affection: 0, encounters: 0, wins: 0, losses: 0, checkedChapters: {}, scheduledChapters: {}, spriteUnlocked: false },
+    jie: { encounters: 0, corrected: 0, missed: 0 },
     settings: { textSpeed: 22, autoSpeed: 1500, theme: "light", bgm: true, bgmVolume: 0.34 },
     bestScore: 0, route: "su"
   });
@@ -23,7 +24,7 @@
   const bgm = new Audio();
   bgm.innerHTML = `<source src="assets/audio/heavenly-loop.ogg" type="audio/ogg"><source src="assets/audio/calm-loop.mp3" type="audio/mpeg">`;
   bgm.loop = true; bgm.preload = "auto";
-  function load() { try { const base = defaultState(), stored = JSON.parse(localStorage.getItem(KEY) || "{}"), characterState = Object.fromEntries(DATA.characters.map(c => [c.id, Object.assign(base.characters[c.id], (stored.characters || {})[c.id] || {})])), merged = Object.assign(base, stored, { settings: Object.assign(base.settings, stored.settings || {}), characters: characterState, banana: Object.assign(base.banana, stored.banana || {}), avalanche: Object.assign(base.avalanche, stored.avalanche || {}) }); if (!stored.checkpoint && merged.unlocked > merged.chapter) merged.chapter = merged.unlocked; return merged; } catch (_) { return defaultState(); } }
+  function load() { try { const base = defaultState(), stored = JSON.parse(localStorage.getItem(KEY) || "{}"), characterState = Object.fromEntries(DATA.characters.map(c => [c.id, Object.assign(base.characters[c.id], (stored.characters || {})[c.id] || {})])), merged = Object.assign(base, stored, { settings: Object.assign(base.settings, stored.settings || {}), characters: characterState, banana: Object.assign(base.banana, stored.banana || {}), avalanche: Object.assign(base.avalanche, stored.avalanche || {}), jie: Object.assign(base.jie, stored.jie || {}) }); if (!stored.checkpoint && merged.unlocked > merged.chapter) merged.chapter = merged.unlocked; return merged; } catch (_) { return defaultState(); } }
   function store() { localStorage.setItem(KEY, JSON.stringify(state)); }
   function save() { store(); toast("进度已保存"); }
   function syncBgm() { bgm.volume = Number(state.settings.bgmVolume ?? .34); if (state.settings.bgm) bgm.play().catch(() => {}); else bgm.pause(); }
@@ -67,7 +68,8 @@
   }
   function bananaArchiveCard() { const b = state.banana; return `<section class="mystery-archive"><div class="section-title"><div><p class="eyebrow">SPECIAL ENCOUNTER</p><h2>神秘乱入者</h2></div><span class="mystery-badge">隐藏角色</span></div><article class="banana-profile"><div class="banana-profile-image"><img src="${bananaImage()}" alt="香蕉君"></div><div><small>调皮的超纲词突击者</small><h3>香蕉君 <em>乱入角色</em></h3><p>他会在主线里突然出现，用超纲词汇打断你的约会节奏。答对，他会暂时离开；答错，反而会让他更开心。</p><label>特殊好感 <b>${b.affection}</b>/50 · 答错才会上涨</label><div class="meter banana-meter"><i style="width:${Math.min(100, b.affection * 2)}%"></i></div><p class="meta">已经乱入 ${b.encounters} 次 · 累计答错 ${b.wrong} 题<br>主题：超纲词汇、随机干扰、隐藏结局</p></div></article></section>`; }
   function avalancheArchiveCard() { const a = state.avalanche; return `<section class="mystery-archive avalanche-archive"><div class="section-title"><div><p class="eyebrow">RACE EASTER EGG</p><h2>彩蛋角色档案</h2></div><span class="mystery-badge avalanche-badge">雪崩竞速</span></div><article class="banana-profile avalanche-profile"><div class="banana-profile-image"><img src="${avalancheImage()}" alt="张雪崩老师"></div><div><small>从天而降的赛跑挑战者</small><h3>张雪崩老师 <em>小游戏彩蛋角色</em></h3><p>他会在主线交流中突然出现，把画面变成十秒横版赛道。累计答对五道核心词题，才能在终点前跑赢他。</p><label>雪崩好感 <b>${a.affection}</b>/5 · 老师跑赢才会上涨</label><div class="meter avalanche-meter"><i style="width:${Math.min(100, a.affection * 20)}%"></i></div><p class="meta">已经乱入 ${a.encounters} 次 · 老师获胜 ${a.losses} 次 · 玩家获胜 ${a.wins} 次<br>奖励：${a.spriteUnlocked ? "已收到张雪崩老师送出的冰镇雪碧" : "好感拉满后解锁一瓶冰镇雪碧"}<br>主题：核心词汇、十秒竞速、Q 萌平台赛道</p></div></article></section>`; }
-  function characters() { unlockSpecialEvents(); shell(`<header><p class="eyebrow">CHARACTER ARCHIVE</p><h1>角色档案</h1><p>她们有自己的目标，也会在共同学习中慢慢改变。偶尔，也会有计划之外的人闯进来。</p></header>${characterCards()}<section class="special-memory"><p class="eyebrow">SPECIAL MEMORIES</p><h2>特别回忆</h2><p>当你们的关系慢慢靠近，某些只属于两个人的片段会留在这里。</p>${specialEventCards()}</section>${bananaArchiveCard()}${avalancheArchiveCard()}`); document.querySelectorAll("[data-special]").forEach(button => button.onclick = () => openSpecialEvent(button.dataset.special)); }
+  function jieArchiveCard() { const j = state.jie; return `<section class="mystery-archive jie-archive"><div class="section-title"><div><p class="eyebrow">MYSTERY RETEST</p><h2>彩蛋角色档案</h2></div><span class="mystery-badge jie-badge">错词补考</span></div><article class="banana-profile jie-profile"><div class="banana-profile-image"><img src="${jieImage()}" alt="杰哥"></div><div><small>神秘空间里的补考监督者</small><h3>杰哥 <em>单次错词彩蛋</em></h3><p>当本章出现错词时，他有较高概率将你拉进神秘空间，让你重新回答其中一道题。无论结果如何，每章最多出现一次。</p><p class="meta">已经出现 ${j.encounters} 次 · 补考答对 ${j.corrected} 次 · 补考仍错 ${j.missed} 次<br>主题：本章错词、神秘空间、电动邀请</p></div></article></section>`; }
+  function characters() { unlockSpecialEvents(); shell(`<header><p class="eyebrow">CHARACTER ARCHIVE</p><h1>角色档案</h1><p>她们有自己的目标，也会在共同学习中慢慢改变。偶尔，也会有计划之外的人闯进来。</p></header>${characterCards()}<section class="special-memory"><p class="eyebrow">SPECIAL MEMORIES</p><h2>特别回忆</h2><p>当你们的关系慢慢靠近，某些只属于两个人的片段会留在这里。</p>${specialEventCards()}</section>${bananaArchiveCard()}${avalancheArchiveCard()}${jieArchiveCard()}`); document.querySelectorAll("[data-special]").forEach(button => button.onclick = () => openSpecialEvent(button.dataset.special)); }
   function openSpecialEvent(id) { specialEvent = (DATA.special_events || []).find(event => event.id === id); specialLine = 0; if (specialEvent) specialStory(); }
   function specialStory() {
     const event = specialEvent, d = event.dialogue[specialLine], heroine = DATA.characters.find(character => character.id === event.character);
@@ -107,6 +109,7 @@
     avalancheIntro(); return true;
   }
   function avalancheImage() { return "assets/characters/zhang-avalanche.jpg?v=1"; }
+  function jieImage() { return "assets/characters/jie-ge.jpg?v=1"; }
   function avalancheIntro() {
     state.avalanche.encounters++; store();
     app.innerHTML = `<main class="avalanche-intro"><div class="falling-teacher"><img src="${avalancheImage()}" alt="张雪崩老师"></div><div class="avalanche-intro-copy"><p class="eyebrow">章节尾声 · 突发彩蛋</p><h1>我是你们的雪崩老师啊</h1><p>十秒竞速开始！题目会连续出现，累计答对五题即可跑完十步。答错不前进，谁先到终点谁获胜。</p><button class="primary" id="avalanche-start">接受挑战</button></div></main>`;
@@ -191,7 +194,7 @@
   function startChallenge(ids, memoryMode = false) {
     const words = (ids || []).map(id => DATA.words[id - 1]).filter(Boolean);
     if (!words.length) { toast("本章互动暂未准备好，已返回章节页"); return setTimeout(() => render("chapters"), 900); }
-    session = { words, at: 0, correct: 0, combo: 0, maxCombo: 0, memoryMode }; challenge();
+    session = { words, at: 0, correct: 0, combo: 0, maxCombo: 0, memoryMode, wrongWords: [], jieChecked: false }; challenge();
   }
   function challengeHost(word) {
     const id = currentChapter?.character || word.related_character_id || state.route || "su";
@@ -254,7 +257,7 @@
   }
   function answer(id, w) {
     const ok = id === w.id, host = challengeHost(w); state.learned[w.id] = true; state.mastered[w.id] = Math.min(4, (state.mastered[w.id] || 0) + (ok ? 1 : 0));
-    if (ok) { session.correct++; session.combo++; delete state.wrong[w.id]; } else { session.combo = 0; state.wrong[w.id] = (state.wrong[w.id] || 0) + 1; }
+    if (ok) { session.correct++; session.combo++; delete state.wrong[w.id]; } else { session.combo = 0; state.wrong[w.id] = (state.wrong[w.id] || 0) + 1; if (!session.wrongWords.some(word => word.id === w.id)) session.wrongWords.push(w); }
     const heartbeat = ok;
     if (heartbeat) state.characters[host.id].affection += 1;
     session.maxCombo = Math.max(session.maxCombo, session.combo); save();
@@ -263,7 +266,25 @@
   function answerScene(host, word, ok) {
     const expression = ok ? (session.combo > 1 ? "shy" : "smile") : "sad";
     app.innerHTML = `<main class="interaction feedback-scene bg-${sceneClass(currentChapter?.scene || "自习室")}"><div class="interaction-top"><span>${ok ? "她似乎很满意" : "她轻轻叹了口气"}</span><b>${host.name}</b></div><div class="interaction-sprite sprite ${host.id} expression-${expression}">${ok ? `<div class="floating-hearts"><i>♥</i><i>♥</i><i>♥</i></div>` : ""}<img src="${expressionImage(host.id, expression)}" onerror="this.onerror=null;this.src='${characterImage(host.id)}'" alt="${host.name}${expression}表情上半身立绘"></div><section class="interaction-box feedback-box"><p class="speaker">${host.name}</p><h2>${answerLine(host, word, ok)}</h2>${ok ? `<p class="heartbeat">心动值 +1 · 她的心情似乎变好了。</p>` : ""}<div class="word-note"><b>${word.word}</b><span>${word.meaning_cn}</span><small>${word.example_en}<br>${word.example_cn}</small></div><button class="primary" id="nextq">${session.at + 1 === session.words.length ? "和她一起看看今天的成果" : "继续陪她复习"}</button></section></main><div id="toast"></div>`;
-    document.getElementById("nextq").onclick = () => { if (++session.at < session.words.length) challenge(); else settlement(); };
+    document.getElementById("nextq").onclick = () => { if (++session.at < session.words.length) challenge(); else maybeJieRetest(); };
+  }
+  function maybeJieRetest() {
+    if (!session || session.jieChecked || session.memoryMode || !currentChapter) return settlement();
+    session.jieChecked = true;
+    if (!session.wrongWords.length || Math.random() >= .7) return settlement();
+    state.jie.encounters++; store();
+    const word = session.wrongWords[Math.floor(Math.random() * session.wrongWords.length)];
+    jieRetest(word);
+  }
+  function jieRetest(word) {
+    const pool = [word, ...DATA.words.filter(item => item.id !== word.id).sort(() => Math.random() - .5).slice(0, 3)].sort(() => Math.random() - .5);
+    app.innerHTML = `<main class="jie-space"><div class="jie-portal"></div><section class="jie-card"><img src="${jieImage()}" alt="杰哥"><p class="eyebrow">神秘空间 · 本章错词补考</p><h1>听话，让我看看！！</h1><p>你刚才把 <strong>${word.word}</strong> 做错了。现在重新选一次。</p><div class="options">${pool.map(item => `<button data-jie-answer="${item.id}">${item.meaning_cn}</button>`).join("")}</div></section></main>`;
+    document.querySelectorAll("[data-jie-answer]").forEach(button => button.onclick = () => answerJie(+button.dataset.jieAnswer, word));
+  }
+  function answerJie(id, word) {
+    const ok = id === word.id; state.jie[ok ? "corrected" : "missed"]++; if (ok) delete state.wrong[word.id]; store();
+    app.innerHTML = `<main class="jie-space jie-result"><section class="jie-card"><img src="${jieImage()}" alt="杰哥"><p class="eyebrow">神秘空间 · 补考结束</p><h1>${ok ? "看来你没有好好打电动嘛，跟我过来" : "还不如跟我打电动呢"}</h1><button class="primary" id="jie-back">回到本章结算</button></section></main>`;
+    document.getElementById("jie-back").onclick = settlement;
   }
   function settlement() {
     const score = Math.round(session.correct / session.words.length * 100); state.bestScore = Math.max(score, state.bestScore);
