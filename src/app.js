@@ -2,9 +2,16 @@
   "use strict";
   const DATA = window.GAME_DATA;
   const KEY = "wordscape-diary-save-v1";
+  const BANANA_WORDS = [
+    ["perspicacious", "有敏锐洞察力的"], ["obfuscate", "使模糊；使困惑"], ["intransigent", "不妥协的；强硬的"],
+    ["ephemeral", "短暂的；转瞬即逝的"], ["ubiquitous", "无处不在的"], ["ameliorate", "改善；缓和"],
+    ["equivocal", "模棱两可的"], ["fastidious", "挑剔的；讲究的"], ["magnanimous", "宽宏大量的"],
+    ["recalcitrant", "顽抗的；难以驾驭的"], ["surreptitious", "秘密进行的；鬼鬼祟祟的"], ["vicissitude", "变迁；人生起伏"],
+  ].map(([word, meaning], index) => ({ id: index + 1, word, meaning }));
   const defaultState = () => ({
     chapter: 1, unlocked: 1, checkpoint: null, streak: 1, lastStudy: "", mastered: {}, wrong: {}, learned: {},
     characters: Object.fromEntries(DATA.characters.map(c => [c.id, { affection: 0, trust: 0, resonance: 0, events: [] }])),
+    banana: { affection: 0, wrong: 0, encounters: 0, checkedChapters: {} },
     settings: { textSpeed: 22, autoSpeed: 1500, theme: "light", bgm: true, bgmVolume: 0.34 },
     bestScore: 0, route: "su"
   });
@@ -14,7 +21,7 @@
   const bgm = new Audio();
   bgm.innerHTML = `<source src="assets/audio/heavenly-loop.ogg" type="audio/ogg"><source src="assets/audio/calm-loop.mp3" type="audio/mpeg">`;
   bgm.loop = true; bgm.preload = "auto";
-  function load() { try { const base = defaultState(), stored = JSON.parse(localStorage.getItem(KEY) || "{}"), merged = Object.assign(base, stored, { settings: Object.assign(base.settings, stored.settings || {}) }); if (!stored.checkpoint && merged.unlocked > merged.chapter) merged.chapter = merged.unlocked; return merged; } catch (_) { return defaultState(); } }
+  function load() { try { const base = defaultState(), stored = JSON.parse(localStorage.getItem(KEY) || "{}"), merged = Object.assign(base, stored, { settings: Object.assign(base.settings, stored.settings || {}), banana: Object.assign(base.banana, stored.banana || {}) }); if (!stored.checkpoint && merged.unlocked > merged.chapter) merged.chapter = merged.unlocked; return merged; } catch (_) { return defaultState(); } }
   function store() { localStorage.setItem(KEY, JSON.stringify(state)); }
   function save() { store(); toast("进度已保存"); }
   function syncBgm() { bgm.volume = Number(state.settings.bgmVolume ?? .34); if (state.settings.bgm) bgm.play().catch(() => {}); else bgm.pause(); }
@@ -26,6 +33,7 @@
   function toast(text) { const el = document.getElementById("toast"); if (!el) return; el.textContent = text; el.classList.add("show"); setTimeout(() => el.classList.remove("show"), 1300); }
   function render(next = view) {
     clearTimers(); view = next;
+    if (state.banana.affection >= 50) return bananaConfession();
     ({home, characters, memory, stats, settings, daily, chapters}[view] || home)();
   }
   function home() {
@@ -60,7 +68,43 @@
     if (auto) autoTimer = setTimeout(nextLine, state.settings.autoSpeed);
   }
   function typeText(text) { const el = document.getElementById("line"); let i = 0; clearInterval(typingTimer); if (fast) return el.textContent = text; typingTimer = setInterval(() => { el.textContent = text.slice(0, ++i); if (i >= text.length) clearInterval(typingTimer); }, state.settings.textSpeed); }
-  function nextLine() { clearTimers(); if (++line < currentChapter.dialogue.length) { state.checkpoint = { chapter: currentChapter.id, stage: "story", line, choiceRound: 0 }; store(); return story(); } choice(); }
+  function nextLine() { clearTimers(); if (++line < currentChapter.dialogue.length) { state.checkpoint = { chapter: currentChapter.id, stage: "story", line, choiceRound: 0 }; store(); if (line === 2 && maybeBananaEncounter()) return; return story(); } choice(); }
+  function maybeBananaEncounter() {
+    if (!currentChapter || state.banana.checkedChapters[currentChapter.id]) return false;
+    state.banana.checkedChapters[currentChapter.id] = true; store();
+    if (Math.random() > .78) return false;
+    bananaQuestion(); return true;
+  }
+  function bananaImage() { return "assets/characters/banana-kun.jpg?v=1"; }
+  function bananaQuestion() {
+    const word = BANANA_WORDS[Math.floor(Math.random() * BANANA_WORDS.length)];
+    const pool = [word, ...BANANA_WORDS.filter(item => item.id !== word.id).sort(() => Math.random() - .5).slice(0, 3)].sort(() => Math.random() - .5);
+    state.banana.encounters++; store();
+    app.innerHTML = `<main class="banana-event"><div class="banana-card"><img src="${bananaImage()}" alt="香蕉君"><p class="eyebrow">神秘乱入 · 超纲突击</p><h1>香蕉君</h1><p>嘿，先别急着和她聊天。答对这题，我就识趣地消失。</p><h2><strong>${word.word}</strong> 是什么意思？</h2><div class="options">${pool.map(item => `<button data-banana-answer="${item.id}">${item.meaning}</button>`).join("")}</div><small>香蕉君好感 ${state.banana.affection}/50 · 答错会让他更来劲</small></div></main>`;
+    document.querySelectorAll("[data-banana-answer]").forEach(button => button.onclick = () => answerBanana(+button.dataset.bananaAnswer, word));
+  }
+  function answerBanana(id, word) {
+    const ok = id === word.id;
+    if (ok) state.banana.affection = Math.max(0, state.banana.affection - 1);
+    else { state.banana.wrong++; state.banana.affection = Math.min(50, state.banana.affection + 1); }
+    store();
+    if (state.banana.affection >= 50) return bananaConfession();
+    if (ok) return bananaExit("居然答对了。行吧，这次先把时间还给你们。");
+    bananaTakeover(word);
+  }
+  function bananaExit(message) {
+    app.innerHTML = `<main class="banana-event banana-exit"><div class="banana-card"><img src="${bananaImage()}" alt="香蕉君"><h1>香蕉君</h1><p>${message}</p><button class="primary" id="banana-back">继续刚才的剧情</button></div></main>`;
+    document.getElementById("banana-back").onclick = story;
+  }
+  function bananaTakeover(word) {
+    app.innerHTML = `<main class="banana-takeover"><img src="${bananaImage()}" alt="香蕉君占领屏幕"><div><h1>香蕉君占领了屏幕</h1><p><strong>${word.word}</strong> 没答对。他开心地挡住了你和她的对话。</p><b id="banana-countdown">5</b></div></main>`;
+    let seconds = 5;
+    const timer = setInterval(() => { seconds--; const counter = document.getElementById("banana-countdown"); if (counter) counter.textContent = seconds; if (seconds <= 0) { clearInterval(timer); bananaExit("好啦，不逗你了。下次可要答对。"); } }, 1000);
+  }
+  function bananaConfession() {
+    app.innerHTML = `<main class="banana-takeover banana-confession"><img src="${bananaImage()}" alt="香蕉君兴奋告白"><div><p class="eyebrow">隐藏结局 · 香蕉君好感 MAX</p><h1>抓到你了</h1><p>答错五十次还不躲着我，你一定是在等我出现吧？从现在开始，屏幕归我了。</p><button class="primary" id="banana-new-game">开始新的游戏</button></div></main>`;
+    document.getElementById("banana-new-game").onclick = () => { if (confirm("确认开始新的游戏？当前进度会被清空。")) { localStorage.removeItem(KEY); state = defaultState(); render("home"); } };
+  }
   function choice() { const c = currentChapter, rounds = c.choice_rounds || [c.choices], options = rounds[choiceRound]; state.checkpoint = { chapter: c.id, stage: "choice", line: c.dialogue.length, choiceRound }; store(); app.innerHTML = `<main class="choice bg-${sceneClass(c.scene)}"><section><p class="eyebrow">你的选择 · ${choiceRound + 1}/${rounds.length}</p><h2>这一刻，你会怎么回应？</h2>${options.map((x,i) => `<button data-choice="${i}">${x.text}</button>`).join("")}</section></main><div id="toast"></div>`; document.querySelectorAll("[data-choice]").forEach(b => b.onclick = () => applyChoice(options[+b.dataset.choice])); }
   function applyChoice(selection) { const id = currentChapter.character || "su", s = state.characters[id]; Object.keys(selection.effect).forEach(k => s[k] += selection.effect[k]); state.route = id; const rounds = currentChapter.choice_rounds || [currentChapter.choices]; if (++choiceRound < rounds.length) { save(); return choice(); } state.checkpoint = { chapter: currentChapter.id, stage: "challenge", line: currentChapter.dialogue.length, choiceRound }; save(); startChallenge(currentChapter.word_ids); }
   function startChallenge(ids, memoryMode = false) {
