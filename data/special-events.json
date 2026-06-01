@@ -1,0 +1,362 @@
+[
+  {
+    "id": "lin-seat",
+    "character": "lin",
+    "threshold": 22,
+    "title": "只留给你的座位",
+    "scene": "图书馆",
+    "summary": "闭馆前，她第一次承认每天留座并不是顺便。",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "晚自习开始前，图书馆几乎坐满。你绕到熟悉的窗边，发现林知夏的书旁边仍压着一张写有你名字的便签。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "迟到了三分钟。按约定，今晚多背三十个词。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "可你还是给我留了位置。林学姐每天都这么顺便吗？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "……不是顺便。这里太吵，换别人坐在旁边会影响我。",
+        "expression": "shy"
+      },
+      {
+        "speaker": "你",
+        "text": "所以只有我不会影响你？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "你会。只是我已经习惯了。学弟，别笑。坐下，陪我到闭馆。",
+        "expression": "shy"
+      }
+    ]
+  },
+  {
+    "id": "lin-rain",
+    "character": "lin",
+    "threshold": 48,
+    "title": "伞下的安全距离",
+    "scene": "雨天校道",
+    "summary": "一场大雨让她嘴硬地缩短了你们之间的距离。",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "雨点落在伞面上，声音密得像一场突然加速的倒计时。林知夏把伞向你这边偏了偏。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "再靠近一点。你的肩膀已经湿了。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "林学姐不怕我误会？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "你误会得还少吗？现在先听话。",
+        "expression": "jealous"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她没有看你，只是指尖悄悄攥紧伞柄。你们的手背偶尔碰到一起，又谁都没有避开。",
+        "expression": "shy"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "学弟，雨停之前……就保持这个距离。只是为了不淋湿。",
+        "expression": "shy"
+      }
+    ]
+  },
+  {
+    "id": "lin-bookmark",
+    "character": "lin",
+    "threshold": 82,
+    "title": "书签背面的答案",
+    "scene": "考场",
+    "summary": "她把一直没说出口的话藏进了银色书签。",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "考场外的风有些凉。林知夏把银色书签放进你掌心，背面比上次多了一行很小的字。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "你",
+        "text": "“以后也坐我旁边。”这是新的复习要求？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "不是要求。是我希望你答应的事。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "如果我想答应得更久一点呢？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "那就别只在这里说。考完以后，认真告诉我。",
+        "expression": "shy"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "还有，学弟。今天别紧张。我会在出口等你。",
+        "expression": "smile"
+      }
+    ]
+  },
+  {
+    "id": "su-window",
+    "character": "su",
+    "threshold": 22,
+    "title": "靠窗位置的偏心",
+    "scene": "图书馆",
+    "summary": "你发现学姐的温柔并不是毫无区别地分给所有人。",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "靠窗的位置放着一杯温水。杯底压着便签：给总是假装不累的某位学弟。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "你来了啊。我还在想，今天要不要把位置让给别人。",
+        "expression": "smile"
+      },
+      {
+        "speaker": "你",
+        "text": "学姐真的舍得？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "不太舍得。所以你最好每天都来，让我不用考虑这种问题。",
+        "expression": "shy"
+      },
+      {
+        "speaker": "你",
+        "text": "听起来，我好像得对这个座位负责。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "嗯。也稍微对等你的人负责一下，好不好？",
+        "expression": "smile"
+      }
+    ]
+  },
+  {
+    "id": "su-call",
+    "character": "su",
+    "threshold": 48,
+    "title": "晚安之前不挂断",
+    "scene": "夜晚宿舍窗边",
+    "summary": "她在深夜第一次坦率承认，自己也需要你的陪伴。",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "电话另一端传来翻动稿纸的声音。苏晚晴沉默了一会儿，没有像平时那样先问你的复习进度。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，今晚能不能先别挂断？我没有什么要紧的事，只是……想听见你还在。",
+        "expression": "sad"
+      },
+      {
+        "speaker": "你",
+        "text": "那就不挂。学姐想安静待着也可以。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "谢谢。平时我总告诉别人可以依赖我，轮到自己却不太会开口。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "以后慢慢练习。先从今晚开始。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "好。那今晚的最后一句不是复习提醒。是晚安，学弟。明天也要来见我。",
+        "expression": "shy"
+      }
+    ]
+  },
+  {
+    "id": "su-key",
+    "character": "su",
+    "threshold": 82,
+    "title": "备用钥匙",
+    "scene": "英语社活动室",
+    "summary": "她把活动室的备用钥匙和更长久的约定交给你。",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "清晨的活动室还很安静。苏晚晴把备用钥匙放到你掌心，却没有立刻松开手。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "以前我总是第一个来，最后一个走。现在好像开始期待有人和我一起。",
+        "expression": "smile"
+      },
+      {
+        "speaker": "你",
+        "text": "这把钥匙是社员福利，还是学姐的偏心？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟已经知道答案了，还一定要我说出来吗？",
+        "expression": "shy"
+      },
+      {
+        "speaker": "你",
+        "text": "有些答案，想亲耳听到。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "那考完以后留下来。不是为了活动室，是为了我。",
+        "expression": "shy"
+      }
+    ]
+  },
+  {
+    "id": "tang-sticker",
+    "character": "tang",
+    "threshold": 22,
+    "title": "贴在你书上的星星",
+    "scene": "英语社活动室",
+    "summary": "她把每日打卡的第一颗星星郑重贴给了你。",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "唐小满把一张金色星星贴纸按在你的词汇书封面上，认真地抚平翘起的边角。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，这是今天的奖励。只发给坚持打卡，而且陪我一起背词的人。",
+        "expression": "smile"
+      },
+      {
+        "speaker": "你",
+        "text": "听起来名额只有一个？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "本来就只有一个。学长不许拿去跟别人炫耀。",
+        "expression": "jealous"
+      },
+      {
+        "speaker": "你",
+        "text": "那我藏好。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "也不用藏得太好啦。至少每天翻书的时候，要想起我一次。",
+        "expression": "shy"
+      }
+    ]
+  },
+  {
+    "id": "tang-earphone",
+    "character": "tang",
+    "threshold": 48,
+    "title": "耳机线的长度",
+    "scene": "咖啡店",
+    "summary": "共享耳机让她找到了一个靠近你的正当理由。",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "咖啡店里有些吵。唐小满把一只耳机递给你，短短的耳机线把你们之间的距离拉近。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，再靠近一点点。不然耳机会掉。",
+        "expression": "shy"
+      },
+      {
+        "speaker": "你",
+        "text": "真的只是耳机线太短？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "当然啦。不然还能是什么？",
+        "expression": "jealous"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她嘴上回答得很快，视线却落在桌角。片刻后，她悄悄把音量调小了一格。",
+        "expression": "shy"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "这样就可以多听一会儿。学长也不许先把耳机摘掉。",
+        "expression": "smile"
+      }
+    ]
+  },
+  {
+    "id": "tang-last-page",
+    "character": "tang",
+    "threshold": 82,
+    "title": "错词本最后一页",
+    "scene": "结局场景",
+    "summary": "最后一页写的不是单词，而是她想和你继续的未来。",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "唐小满把厚厚的错词本递给你。最后一页没有单词，只有一行被她反复描过的字。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "你",
+        "text": "“考试结束后，也要继续见面。”这算新的打卡任务？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "嗯，而且是长期任务。学长不能只坚持到考试结束。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "如果我打算一直打卡呢？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "那我就一直检查。每天都检查。",
+        "expression": "shy"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，说好了哦。以后开心或者不开心，都要留一个位置给我。",
+        "expression": "smile"
+      }
+    ]
+  }
+]
