@@ -6,6 +6,7 @@
 - 隐藏彩蛋角色：`assets/characters/banana-kun.jpg` 为用户提供的参考图，仅用于原型演示。公开发布前应确认其拥有使用和传播权限；如不确定，请替换为原创绘制版本。
 - 彩蛋角色：`assets/characters/zhang-avalanche.jpg` 为用户提供的张雪崩老师参考图，仅用于原型演示。公开发布前应确认其拥有使用和传播权限；如不确定，请替换为原创绘制版本。
 - 彩蛋角色：`assets/characters/jie-ge.jpg` 为用户提供的杰哥参考图，仅用于原型演示。公开发布前应确认其拥有使用和传播权限；如不确定，请替换为原创绘制版本。
+- 满分彩蛋角色：`assets/characters/fatcat.jpg` 与 `assets/characters/king.jpg` 为用户提供的参考图，仅用于原型演示。公开发布前应确认其拥有使用和传播权限；如不确定，请替换为原创绘制版本。
 - 背景：`assets/backgrounds/` 中包含 10 张原创 AI 生成校园场景 PNG 原稿及压缩 JPEG 运行版本。网页加载 JPEG，并保留 CSS 渐变作为加载失败时的回退。
 - UI：项目内原创 CSS。
 - BGM：`assets/audio/heavenly-loop.ogg` 与 `assets/audio/calm-loop.mp3`，来自 OpenGameArt，CC0。MP3 用作 Safari 和部分手机浏览器回退。

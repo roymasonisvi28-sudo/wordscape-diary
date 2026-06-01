@@ -15,16 +15,17 @@
     banana: { affection: 0, wrong: 0, encounters: 0, checkedChapters: {} },
     avalanche: { affection: 0, encounters: 0, wins: 0, losses: 0, checkedChapters: {}, scheduledChapters: {}, spriteUnlocked: false },
     jie: { encounters: 0, corrected: 0, missed: 0 },
+    burger: { encounters: 0, fatcatWins: 0, kingWins: 0 },
     settings: { textSpeed: 22, autoSpeed: 1500, theme: "light", bgm: true, bgmVolume: 0.34 },
     bestScore: 0, route: "su"
   });
   let state = load();
-  let view = "home", currentChapter = null, line = 0, choiceRound = 0, typingTimer = null, autoTimer = null, avalancheTimer = null, fast = false, auto = false, session = null, specialEvent = null, specialLine = 0, avalancheRace = null;
+  let view = "home", currentChapter = null, line = 0, choiceRound = 0, typingTimer = null, autoTimer = null, avalancheTimer = null, burgerTimer = null, fast = false, auto = false, session = null, specialEvent = null, specialLine = 0, avalancheRace = null, burgerGame = null;
   const app = document.getElementById("app");
   const bgm = new Audio();
   bgm.innerHTML = `<source src="assets/audio/heavenly-loop.ogg" type="audio/ogg"><source src="assets/audio/calm-loop.mp3" type="audio/mpeg">`;
   bgm.loop = true; bgm.preload = "auto";
-  function load() { try { const base = defaultState(), stored = JSON.parse(localStorage.getItem(KEY) || "{}"), characterState = Object.fromEntries(DATA.characters.map(c => [c.id, Object.assign(base.characters[c.id], (stored.characters || {})[c.id] || {})])), merged = Object.assign(base, stored, { settings: Object.assign(base.settings, stored.settings || {}), characters: characterState, banana: Object.assign(base.banana, stored.banana || {}), avalanche: Object.assign(base.avalanche, stored.avalanche || {}), jie: Object.assign(base.jie, stored.jie || {}) }); if (!stored.checkpoint && merged.unlocked > merged.chapter) merged.chapter = merged.unlocked; return merged; } catch (_) { return defaultState(); } }
+  function load() { try { const base = defaultState(), stored = JSON.parse(localStorage.getItem(KEY) || "{}"), characterState = Object.fromEntries(DATA.characters.map(c => [c.id, Object.assign(base.characters[c.id], (stored.characters || {})[c.id] || {})])), merged = Object.assign(base, stored, { settings: Object.assign(base.settings, stored.settings || {}), characters: characterState, banana: Object.assign(base.banana, stored.banana || {}), avalanche: Object.assign(base.avalanche, stored.avalanche || {}), jie: Object.assign(base.jie, stored.jie || {}), burger: Object.assign(base.burger, stored.burger || {}) }); if (!stored.checkpoint && merged.unlocked > merged.chapter) merged.chapter = merged.unlocked; return merged; } catch (_) { return defaultState(); } }
   function store() { localStorage.setItem(KEY, JSON.stringify(state)); }
   function save() { store(); toast("进度已保存"); }
   function syncBgm() { bgm.volume = Number(state.settings.bgmVolume ?? .34); if (state.settings.bgm) bgm.play().catch(() => {}); else bgm.pause(); }
@@ -69,7 +70,8 @@
   function bananaArchiveCard() { const b = state.banana; return `<section class="mystery-archive"><div class="section-title"><div><p class="eyebrow">SPECIAL ENCOUNTER</p><h2>神秘乱入者</h2></div><span class="mystery-badge">隐藏角色</span></div><article class="banana-profile"><div class="banana-profile-image"><img src="${bananaImage()}" alt="香蕉君"></div><div><small>调皮的超纲词突击者</small><h3>香蕉君 <em>乱入角色</em></h3><p>他会在主线里突然出现，用超纲词汇打断你的约会节奏。答对，他会暂时离开；答错，反而会让他更开心。</p><label>特殊好感 <b>${b.affection}</b>/50 · 答错才会上涨</label><div class="meter banana-meter"><i style="width:${Math.min(100, b.affection * 2)}%"></i></div><p class="meta">已经乱入 ${b.encounters} 次 · 累计答错 ${b.wrong} 题<br>主题：超纲词汇、随机干扰、隐藏结局</p></div></article></section>`; }
   function avalancheArchiveCard() { const a = state.avalanche; return `<section class="mystery-archive avalanche-archive"><div class="section-title"><div><p class="eyebrow">RACE EASTER EGG</p><h2>彩蛋角色档案</h2></div><span class="mystery-badge avalanche-badge">雪崩竞速</span></div><article class="banana-profile avalanche-profile"><div class="banana-profile-image"><img src="${avalancheImage()}" alt="张雪崩老师"></div><div><small>从天而降的赛跑挑战者</small><h3>张雪崩老师 <em>小游戏彩蛋角色</em></h3><p>他会在主线交流中突然出现，把画面变成十秒横版赛道。累计答对五道核心词题，才能在终点前跑赢他。</p><label>雪崩好感 <b>${a.affection}</b>/5 · 老师跑赢才会上涨</label><div class="meter avalanche-meter"><i style="width:${Math.min(100, a.affection * 20)}%"></i></div><p class="meta">已经乱入 ${a.encounters} 次 · 老师获胜 ${a.losses} 次 · 玩家获胜 ${a.wins} 次<br>奖励：${a.spriteUnlocked ? "已收到张雪崩老师送出的冰镇雪碧" : "好感拉满后解锁一瓶冰镇雪碧"}<br>主题：核心词汇、十秒竞速、Q 萌平台赛道</p></div></article></section>`; }
   function jieArchiveCard() { const j = state.jie; return `<section class="mystery-archive jie-archive"><div class="section-title"><div><p class="eyebrow">MYSTERY RETEST</p><h2>彩蛋角色档案</h2></div><span class="mystery-badge jie-badge">错词补考</span></div><article class="banana-profile jie-profile"><div class="banana-profile-image"><img src="${jieImage()}" alt="杰哥"></div><div><small>神秘空间里的补考监督者</small><h3>杰哥 <em>单次错词彩蛋</em></h3><p>当本章出现错词时，他有较高概率将你拉进神秘空间，让你重新回答其中一道题。无论结果如何，每章最多出现一次。</p><p class="meta">已经出现 ${j.encounters} 次 · 补考答对 ${j.corrected} 次 · 补考仍错 ${j.missed} 次<br>主题：本章错词、神秘空间、电动邀请</p></div></article></section>`; }
-  function characters() { unlockSpecialEvents(); shell(`<header><p class="eyebrow">CHARACTER ARCHIVE</p><h1>角色档案</h1><p>她们有自己的目标，也会在共同学习中慢慢改变。偶尔，也会有计划之外的人闯进来。</p></header>${characterCards()}<section class="special-memory"><p class="eyebrow">SPECIAL MEMORIES</p><h2>特别回忆</h2><p>当你们的关系慢慢靠近，某些只属于两个人的片段会留在这里。</p>${specialEventCards()}</section>${bananaArchiveCard()}${avalancheArchiveCard()}${jieArchiveCard()}`); document.querySelectorAll("[data-special]").forEach(button => button.onclick = () => openSpecialEvent(button.dataset.special)); }
+  function burgerArchiveCard() { const b = state.burger; return `<section class="mystery-archive burger-archive"><div class="section-title"><div><p class="eyebrow">BURGER SHOWDOWN</p><h2>汉堡争夺档案</h2></div><span class="mystery-badge burger-badge">满分彩蛋</span></div><div class="burger-profiles"><article class="burger-profile"><img src="${fatcatImage()}" alt="fatcat"><h3>fatcat</h3><p>蓝紫色汉堡争夺者。满分章节后可以选择加入他的阵营。</p></article><article class="burger-profile"><img src="${kingImage()}" alt="king"><h3>king</h3><p>向资本发起挑战的对手。选择他的阵营也会触发专属宣言。</p></article></div><p class="meta">已经触发 ${b.encounters} 次 · fatcat 获胜 ${b.fatcatWins} 次 · king 获胜 ${b.kingWins} 次</p></section>`; }
+  function characters() { unlockSpecialEvents(); shell(`<header><p class="eyebrow">CHARACTER ARCHIVE</p><h1>角色档案</h1><p>她们有自己的目标，也会在共同学习中慢慢改变。偶尔，也会有计划之外的人闯进来。</p></header>${characterCards()}<section class="special-memory"><p class="eyebrow">SPECIAL MEMORIES</p><h2>特别回忆</h2><p>当你们的关系慢慢靠近，某些只属于两个人的片段会留在这里。</p>${specialEventCards()}</section>${bananaArchiveCard()}${avalancheArchiveCard()}${jieArchiveCard()}${burgerArchiveCard()}`); document.querySelectorAll("[data-special]").forEach(button => button.onclick = () => openSpecialEvent(button.dataset.special)); }
   function openSpecialEvent(id) { specialEvent = (DATA.special_events || []).find(event => event.id === id); specialLine = 0; if (specialEvent) specialStory(); }
   function specialStory() {
     const event = specialEvent, d = event.dialogue[specialLine], heroine = DATA.characters.find(character => character.id === event.character);
@@ -110,6 +112,8 @@
   }
   function avalancheImage() { return "assets/characters/zhang-avalanche.jpg?v=1"; }
   function jieImage() { return "assets/characters/jie-ge.jpg?v=1"; }
+  function fatcatImage() { return "assets/characters/fatcat.jpg?v=1"; }
+  function kingImage() { return "assets/characters/king.jpg?v=1"; }
   function avalancheIntro() {
     state.avalanche.encounters++; store();
     app.innerHTML = `<main class="avalanche-intro"><div class="falling-teacher"><img src="${avalancheImage()}" alt="张雪崩老师"></div><div class="avalanche-intro-copy"><p class="eyebrow">章节尾声 · 突发彩蛋</p><h1>我是你们的雪崩老师啊</h1><p>十秒竞速开始！题目会连续出现，累计答对五题即可跑完十步。答错不前进，谁先到终点谁获胜。</p><button class="primary" id="avalanche-start">接受挑战</button></div></main>`;
@@ -288,6 +292,7 @@
   }
   function settlement() {
     const score = Math.round(session.correct / session.words.length * 100); state.bestScore = Math.max(score, state.bestScore);
+    if (!session.memoryMode && score === 100 && !session.burgerChecked) { session.burgerChecked = true; return chooseBurgerTeam(); }
     if (!session.memoryMode && score >= currentChapter.unlock_score) {
       state.unlocked = Math.min(DATA.chapters.length, Math.max(state.unlocked, currentChapter.id + 1));
       state.chapter = Math.min(DATA.chapters.length, currentChapter.id + 1);
@@ -296,12 +301,38 @@
     const newEvents = unlockSpecialEvents(), memory = newEvents[0];
     save(); shell(`<section class="result"><p class="eyebrow">STUDY REPORT</p><h1>${score} 分</h1><p>${score >= 80 ? "这一页，已经开始留在你的记忆里了。" : "没关系。错过的词，会在记忆回廊里等你重新遇见。"}</p>${memory ? `<div class="event-unlock"><p class="eyebrow">SPECIAL MEMORY UNLOCKED</p><h2>特别回忆已解锁：${memory.title}</h2><p>${memory.summary}</p><button class="primary" id="play-memory">现在去见她</button></div>` : ""}<div class="dashboard"><article><b>${session.words.length}</b><span>学习单词</span></article><article><b>${session.correct}</b><span>回答正确</span></article><article><b>${session.maxCombo}</b><span>最高连击</span></article></div><div class="actions"><button class="primary" data-go="home">返回首页</button><button data-go="memory">查看记忆回廊</button></div></section>`); bindNav(); if (memory) document.getElementById("play-memory").onclick = () => openSpecialEvent(memory.id);
   }
+  function chooseBurgerTeam() {
+    state.burger.encounters++; store();
+    app.innerHTML = `<main class="burger-arena team-select"><section><p class="eyebrow">满分奖励 · 汉堡争夺战</p><h1>选择你的阵营</h1><p>双方将争夺最后的大汉堡。中文选英文，三秒内答对才能抢先一步。</p><div class="burger-teams"><button data-burger-team="fatcat"><img src="${fatcatImage()}" alt="fatcat"><b>fatcat</b></button><button data-burger-team="king"><img src="${kingImage()}" alt="king"><b>king</b></button></div></section></main>`;
+    document.querySelectorAll("[data-burger-team]").forEach(button => button.onclick = () => startBurgerGame(button.dataset.burgerTeam));
+  }
+  function startBurgerGame(team) {
+    burgerGame = { team, opponent: team === "fatcat" ? "king" : "fatcat", remaining: 3, resolved: false };
+    app.innerHTML = `<main class="burger-arena burger-declaration"><section><p class="eyebrow">${team} 阵营已确认</p><h1>${team === "fatcat" ? "我要夺回我的麦当劳" : "这一次我会战胜资本"}</h1><button class="primary" id="burger-start">开始抢夺大汉堡</button></section></main>`;
+    document.getElementById("burger-start").onclick = burgerQuestion;
+  }
+  function burgerQuestion() {
+    clearInterval(burgerTimer);
+    const word = DATA.words[(currentChapter.id * 29 + state.burger.encounters * 7) % DATA.words.length], pool = [word, ...DATA.words.filter(item => item.id !== word.id).sort(() => Math.random() - .5).slice(0, 3)].sort(() => Math.random() - .5);
+    burgerGame.word = word; burgerGame.remaining = 3; burgerGame.resolved = false;
+    app.innerHTML = `<main class="burger-arena burger-battle"><section class="burger-stage"><div class="burger-fighter"><img src="${burgerGame.team === "fatcat" ? fatcatImage() : kingImage()}" alt="${burgerGame.team}"><b>${burgerGame.team}</b></div><div class="giant-burger"><i></i><i></i><i></i><i></i></div><div class="burger-fighter"><img src="${burgerGame.opponent === "fatcat" ? fatcatImage() : kingImage()}" alt="${burgerGame.opponent}"><b>${burgerGame.opponent}</b></div></section><section class="burger-question"><b id="burger-time">3</b><p>请选择 <strong>${word.meaning_cn}</strong> 对应的英文单词：</p><div class="options">${pool.map(item => `<button data-burger-answer="${item.id}">${item.word}</button>`).join("")}</div></section></main>`;
+    document.querySelectorAll("[data-burger-answer]").forEach(button => button.onclick = () => answerBurger(+button.dataset.burgerAnswer));
+    burgerTimer = setInterval(() => { if (!burgerGame || burgerGame.resolved) return; burgerGame.remaining--; const el = document.getElementById("burger-time"); if (el) el.textContent = burgerGame.remaining; if (burgerGame.remaining <= 0) finishBurgerGame(false, true); }, 1000);
+  }
+  function answerBurger(id) { if (!burgerGame || burgerGame.resolved) return; finishBurgerGame(id === burgerGame.word.id, false); }
+  function finishBurgerGame(playerWon, timedOut) {
+    burgerGame.resolved = true; clearInterval(burgerTimer);
+    const winner = playerWon ? burgerGame.team : burgerGame.opponent, line = winner === "fatcat" ? "我从地狱归来" : "EXO我回来了", loserLine = burgerGame.team === "fatcat" ? "根本你不懂的不懂得爱我" : "资本你赢了";
+    state.burger[winner === "fatcat" ? "fatcatWins" : "kingWins"]++; store();
+    app.innerHTML = `<main class="burger-arena burger-result"><section><p class="eyebrow">${timedOut ? "三秒已到 · 你的选项已标红" : playerWon ? "抢夺成功" : "选错了 · 你的选项已标红"}</p><div class="burger-result-fighters"><div class="${playerWon ? "winner" : "loser"}"><img src="${burgerGame.team === "fatcat" ? fatcatImage() : kingImage()}" alt="${burgerGame.team}"><b>${burgerGame.team}</b></div><div class="giant-burger"><i></i><i></i><i></i><i></i></div><div class="${playerWon ? "loser" : "winner"}"><img src="${burgerGame.opponent === "fatcat" ? fatcatImage() : kingImage()}" alt="${burgerGame.opponent}"><b>${burgerGame.opponent}</b></div></div><h1>${playerWon ? line : loserLine}</h1><button class="primary" id="burger-back">回到本章结算</button></section></main>`;
+    document.getElementById("burger-back").onclick = settlement;
+  }
   function memory() { const ids = Object.keys(state.wrong).map(Number), words = ids.map(id => DATA.words[id-1]); shell(`<header><p class="eyebrow">MEMORY CORRIDOR</p><h1>记忆回廊</h1><p>答错的词并不是失败，只是下一次相遇的坐标。</p></header>${words.length ? `<button class="primary" id="review">重新挑战 ${Math.min(10,words.length)} 个错词</button><div class="word-list">${words.map(w => `<article><b>${w.word}</b><span>${w.meaning_cn}</span><small>${w.related_character} · 错误 ${state.wrong[w.id]} 次</small></article>`).join("")}</div>` : `<div class="empty">回廊里还没有错词。继续保持。</div>`}`); if (words.length) document.getElementById("review").onclick = () => startChallenge(ids.slice(0,10), true); }
   function stats() { const learned = Object.keys(state.learned).length, mastered = Object.values(state.mastered).filter(x => x >= 2).length; shell(`<header><p class="eyebrow">LEARNING STATS</p><h1>学习统计</h1></header><section class="dashboard"><article><b>${learned}</b><span>接触单词</span></article><article><b>${mastered}</b><span>已掌握</span></article><article><b>${Object.keys(state.wrong).length}</b><span>错词数量</span></article><article><b>${state.bestScore}</b><span>最高分</span></article></section><div class="panel"><h2>词库进度</h2><p>首版核心高频词：500 个</p><div class="meter"><i style="width:${learned/5}%"></i></div><p>基础、提升、高阶三层结构已经保留，可继续扩展至约 2000 词。</p></div>`); }
   function daily() { const day = new Date().toISOString().slice(0,10); if (state.lastStudy !== day) { state.lastStudy = day; state.streak += 1; save(); } const ids = DATA.words.slice((new Date().getDate()*7)%450).slice(0,10).map(x=>x.id); shell(`<header><p class="eyebrow">DAILY STUDY</p><h1>今日学习</h1><p>${DATA.characters[new Date().getDate()%3].greeting}</p></header><div class="panel"><h2>今日推荐</h2><p>10 个新词与错词回顾会计入连续学习天数。</p><button class="primary" id="daily-start">开始今日挑战</button></div>`); document.getElementById("daily-start").onclick=()=>startChallenge(ids,true); }
   function settings() { shell(`<header><p class="eyebrow">SETTINGS</p><h1>设置</h1></header><div class="panel settings"><label>文字速度 <input id="speed" type="range" min="8" max="60" value="${state.settings.textSpeed}"></label><label>自动播放间隔 <input id="autospeed" type="range" min="800" max="3000" step="100" value="${state.settings.autoSpeed}"></label><label><input id="bgm" type="checkbox" ${state.settings.bgm ? "checked":""}> 开启背景音乐</label><label>背景音乐音量 <input id="bgmVolume" type="range" min="0" max="1" step="0.05" value="${state.settings.bgmVolume ?? .34}"></label><label>主题 <select id="theme"><option value="light">浅色</option><option value="dark" ${state.settings.theme==="dark"?"selected":""}>深色</option></select></label><button id="manual">手动存档</button><button class="danger" id="reset">重置进度</button></div>`); document.getElementById("manual").onclick=save; document.getElementById("reset").onclick=()=>{if(confirm("确认删除全部进度？")){localStorage.removeItem(KEY);state=defaultState();render("home");}}; ["speed","autospeed","bgm","bgmVolume","theme"].forEach(id=>document.getElementById(id).onchange=e=>{state.settings[id==="speed"?"textSpeed":id==="autospeed"?"autoSpeed":id]=e.target.type==="checkbox"?e.target.checked:e.target.value; document.body.dataset.theme=state.settings.theme; syncBgm(); save();}); }
   function sceneClass(s) { return ({图书馆:"library",自习室:"study",英语社活动室:"club",咖啡店:"cafe",操场黄昏:"field",雨天校道:"rain",夜晚宿舍窗边:"night",考场:"exam","大学校门":"gate","结局场景":"ending"})[s] || "study"; }
-  function clearTimers(){ clearInterval(typingTimer); clearTimeout(autoTimer); clearInterval(avalancheTimer); }
+  function clearTimers(){ clearInterval(typingTimer); clearTimeout(autoTimer); clearInterval(avalancheTimer); clearInterval(burgerTimer); }
   document.addEventListener("click", syncBgm, { once: true });
   document.body.dataset.theme = state.settings.theme; render();
 })();
