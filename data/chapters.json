@@ -1,0 +1,4886 @@
+[
+  {
+    "id": 1,
+    "title": "序章 01：掉在及格线外",
+    "subtitle": "分班测试失败",
+    "scene": "大学校门",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "分班测试的成绩贴在公告栏上。你站在人群最后，那个没有及格的分数格外醒目。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，要不要先别急着把成绩单揉掉？承认这次没考好，不等于承认自己不行。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "被学姐撞见这种场面，还真有点狼狈。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "那就把狼狈留在今天吧。明天来英语社，我给你留一个位置。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的分班测试成绩单",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和分班测试成绩单带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把分班测试成绩单写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的分班测试成绩单",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和分班测试成绩单带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把分班测试成绩单写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成分班测试成绩单",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于分班测试成绩单的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 2,
+    "title": "序章 02：张哲英语社",
+    "subtitle": "加入张哲英语社",
+    "scene": "英语社活动室",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "活动室里有淡淡的咖啡香。苏晚晴把报名表推到你面前，指尖压着纸角，没有催促。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，签名前可以反悔。不过签下之后，我会认真催你来打卡。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "听起来像是被学姐盯上了。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "是啊。至少在你真正进步以前，我暂时不打算放过你。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的英语社报名表",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和英语社报名表带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把英语社报名表写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的英语社报名表",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和英语社报名表带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把英语社报名表写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成英语社报名表",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于英语社报名表的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 3,
+    "title": "序章 03：第一次并肩",
+    "subtitle": "第一次单词挑战",
+    "scene": "自习室",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "夜色落在自习室玻璃上。林知夏把一张十词清单推来，唐小满抱着错词本坐在另一侧。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "学弟，基础差不可怕。可怕的是连十个词都不肯认真面对。先看着我，把这十个答完。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "那就从这十个开始。至少别让你第一天就看扁我。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "口气倒是不小。答得好，我会考虑明天继续坐这里。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的第一次十词约定",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和第一次十词约定带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把第一次十词约定写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的第一次十词约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和第一次十词约定带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把第一次十词约定写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成第一次十词约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于第一次十词约定的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 4,
+    "title": "林知夏线 01：错题本边缘",
+    "subtitle": "错题本上的批注",
+    "scene": "图书馆",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "你在图书馆找到自己的错题本时，页边已经多了几行清晰的蓝色批注。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "别误会。我只是看不下去有人在同一个地方连续摔三次。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "所以你特地帮我改到闭馆？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "学弟，少自作多情。真想谢我，就先把我圈出的词答对。答得好，我可以再陪你一会儿。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的借走错题本",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和借走错题本带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把借走错题本写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的借走错题本",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和借走错题本带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把借走错题本写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成借走错题本",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于借走错题本的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 5,
+    "title": "林知夏线 02：无声的较量",
+    "subtitle": "自习室排名",
+    "scene": "自习室",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "午后的自习室很安静。林知夏把两份模拟题并排放好，在你的分数旁轻轻点了一下。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "比上次高了十二分。勉强值得我把你当作对手。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "只是对手？我还以为已经能算固定同桌了。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "先赢过我一次再说。赢了的话，明天的位置让你选。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的模拟题赌约",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和模拟题赌约带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把模拟题赌约写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的模拟题赌约",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和模拟题赌约带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把模拟题赌约写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成模拟题赌约",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于模拟题赌约的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 6,
+    "title": "林知夏线 03：雨天留座",
+    "subtitle": "雨天送伞",
+    "scene": "雨天校道",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "雨下得突然。教学楼门口，林知夏抱着两本书站在伞下，像是已经等了一会儿。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "学弟，你再不过来，我就真的不等了。……伞不大，靠近一点。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "原来你是在等我。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "……只是顺路。靠近一点，淋湿了会影响今晚的复习效率。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的共撑一把伞",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和共撑一把伞带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把共撑一把伞写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的共撑一把伞",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和共撑一把伞带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把共撑一把伞写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成共撑一把伞",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于共撑一把伞的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 7,
+    "title": "林知夏线 04：阅读理解之夜",
+    "subtitle": "闭馆前的并肩",
+    "scene": "图书馆",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "闭馆广播响起时，你们还在为一篇阅读的转折句争论。林知夏没有收书，只把笔递给你。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "学弟，再给你最后一次机会。找出 however 后面真正的重点。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "如果答对了，能不能别总把我当普通学弟训？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "可以考虑。前提是你别在这种时候故意让我分心。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的闭馆铃声",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和闭馆铃声带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把闭馆铃声写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的闭馆铃声",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和闭馆铃声带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把闭馆铃声写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成闭馆铃声",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于闭馆铃声的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 8,
+    "title": "林知夏线 05：模拟考前夕",
+    "subtitle": "操场散步",
+    "scene": "操场黄昏",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "模拟考前夕，林知夏罕见地没有留在图书馆。夕阳把操场边的影子拉得很长。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "我知道你想多做一套题。但学弟，偶尔陪我走十分钟，不算逃避。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "这算学霸的特别许可？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "只对你有效。明天别让我失望，也别让自己失望。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的放慢十分钟",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和放慢十分钟带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把放慢十分钟写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的放慢十分钟",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和放慢十分钟带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把放慢十分钟写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成放慢十分钟",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于放慢十分钟的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 9,
+    "title": "林知夏线 06：并肩的距离",
+    "subtitle": "深夜消息",
+    "scene": "夜晚宿舍窗边",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "深夜十一点，你收到林知夏发来的错题照片。几秒后，又多了一句很快被撤回的消息。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "刚才那句不用管。我只是确认你没有熬夜到太晚。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "已经看见了。你说的是：累了就早点睡。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "……看见就看见。今晚答完这组词，必须休息。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的未发送的关心",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和未发送的关心带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把未发送的关心写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的未发送的关心",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和未发送的关心带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把未发送的关心写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成未发送的关心",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于未发送的关心的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 10,
+    "title": "林知夏线 07：交换书签",
+    "subtitle": "书签背面的字",
+    "scene": "图书馆",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "林知夏把常用的银色书签夹进你的词汇书。背面有一行很小的字：不要在终点前怀疑自己。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "只是暂时借你。考完要还。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "如果舍不得还呢？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "那就用另一件东西来换。至于是什么，等你上岸再想。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的银色书签",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和银色书签带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把银色书签写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的银色书签",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和银色书签带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把银色书签写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成银色书签",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于银色书签的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 11,
+    "title": "林知夏线 08：考场门口",
+    "subtitle": "克制的偏心",
+    "scene": "考场",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "进考场前，人群从身边匆匆经过。林知夏替你理正书签露出的一角，动作很轻。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "学弟，最后一次提醒：别慌。你已经不是第一次见面时的水平了。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "考完以后，还能继续坐你旁边吗？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "……位置一直给你留着。只是以后，不许再装作不知道。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的考场前的约定",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和考场前的约定带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把考场前的约定写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的考场前的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和考场前的约定带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把考场前的约定写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成考场前的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于考场前的约定的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 12,
+    "title": "苏晚晴线 01：靠窗的位置",
+    "subtitle": "固定座位",
+    "scene": "图书馆",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "你推开图书馆侧门时，靠窗桌上放着一杯温水，旁边还有苏晚晴写好的复习计划。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，今天也来了。这个位置光线好，我猜你会喜欢。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "学姐是不是对每个社员都这么照顾？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "你可以先认真背词。等你答对了，我再考虑要不要告诉你答案。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的靠窗座位",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和靠窗座位带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把靠窗座位写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的靠窗座位",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和靠窗座位带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把靠窗座位写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成靠窗座位",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于靠窗座位的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 13,
+    "title": "苏晚晴线 02：迎新演讲",
+    "subtitle": "后台排练",
+    "scene": "英语社活动室",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "迎新活动开始前，苏晚晴独自在空教室里改稿。她念到最后一段时停了两次。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，能帮我听一遍吗？平时总是我给别人建议，轮到自己反而有点没底。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "原来学姐也会紧张。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "会啊。所以今天，能不能让我稍微依赖你一下？",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的演讲稿最后一段",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和演讲稿最后一段带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把演讲稿最后一段写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的演讲稿最后一段",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和演讲稿最后一段带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把演讲稿最后一段写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成演讲稿最后一段",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于演讲稿最后一段的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 14,
+    "title": "苏晚晴线 03：咖啡店改稿",
+    "subtitle": "一杯热拿铁",
+    "scene": "咖啡店",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "窗外的雨声很轻。苏晚晴在咖啡店桌边改你的作文，红笔停在结尾处，没有立刻落下。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，这一段写得比以前真诚。只是结尾还差一点勇气。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "学姐陪我改到这么晚，我好像更有勇气了。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "……那我是不是该坐近一点，免得你又把勇气弄丢？",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的咖啡店改稿",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和咖啡店改稿带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把咖啡店改稿写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的咖啡店改稿",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和咖啡店改稿带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把咖啡店改稿写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成咖啡店改稿",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于咖啡店改稿的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 15,
+    "title": "苏晚晴线 04：社长的疲惫",
+    "subtitle": "空教室里的沉默",
+    "scene": "英语社活动室",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "活动结束后，苏晚晴仍坐在空教室里。桌上是经费表、报名表和没来得及喝完的冷咖啡。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "我没事，只是稍微有点累。学弟不用为了我耽误复习。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "学姐总说可以依赖别人，自己却不太会。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "被你发现了啊。那今晚，陪我把资料收完再走，好吗？",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的替她收拾资料",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和替她收拾资料带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把替她收拾资料写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的替她收拾资料",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和替她收拾资料带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把替她收拾资料写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成替她收拾资料",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于替她收拾资料的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 16,
+    "title": "苏晚晴线 05：夜晚窗边",
+    "subtitle": "迟到的晚安",
+    "scene": "夜晚宿舍窗边",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "熄灯前，苏晚晴发来一条很短的消息：还醒着吗。你拨过去时，她在电话另一端安静了几秒。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，今天不用背太多。我只是想听听你的声音，确认你没有勉强自己。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "也确认一下学姐没有勉强自己。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "嗯。那我们各背五个词，然后认真说晚安。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的深夜通话",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和深夜通话带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把深夜通话写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的深夜通话",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和深夜通话带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把深夜通话写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成深夜通话",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于深夜通话的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 17,
+    "title": "苏晚晴线 06：校级演讲",
+    "subtitle": "舞台侧幕",
+    "scene": "英语社活动室",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "校级演讲前，苏晚晴站在侧幕阴影里。她向你伸出手，指尖比平时凉一点。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，借我一点勇气。只到演讲结束就还你。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "不用急着还。可以多借一会儿。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "那你要负责等我下台。第一眼，我想看见你。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的上台前握手",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和上台前握手带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把上台前握手写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的上台前握手",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和上台前握手带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把上台前握手写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成上台前握手",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于上台前握手的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 18,
+    "title": "苏晚晴线 07：坦率的停顿",
+    "subtitle": "演讲后的长椅",
+    "scene": "操场黄昏",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "掌声散去后，苏晚晴没有回活动室。她坐在操场边的长椅上，终于慢慢呼出一口气。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，我以前以为自己必须一直可靠。可在你面前，好像不用那么努力装作没事。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "那就把累的时候也交给我。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "好。只是这样一来，我可能会越来越舍不得你离开。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的不再逞强",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和不再逞强带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把不再逞强写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的不再逞强",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和不再逞强带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把不再逞强写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成不再逞强",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于不再逞强的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 19,
+    "title": "苏晚晴线 08：约定之后",
+    "subtitle": "社团钥匙",
+    "scene": "结局场景",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "清晨的活动室还没有其他人。苏晚晴把备用钥匙放进你掌心，目光温柔却没有躲开。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，张哲英语社以后也需要你。不是作为临时来复习的人。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "那作为一直陪在学姐身边的人呢？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "……这个位置，我从很早以前就替你留好了。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的钥匙与告白",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和钥匙与告白带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把钥匙与告白写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的钥匙与告白",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和钥匙与告白带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把钥匙与告白写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成钥匙与告白",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于钥匙与告白的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 20,
+    "title": "唐小满线 01：学妹的错词本",
+    "subtitle": "写满贴纸的本子",
+    "scene": "英语社活动室",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "唐小满抱着一本贴满彩色便签的错词本冲进活动室，在你桌边急刹车。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，救命。我明明昨天记住了，今天它们又像第一次见我。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "先把最容易错的十个交出来。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "好！不过学长也要给我看你的错词本。共同进步，不许只检查我。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的交换错词本",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和交换错词本带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把交换错词本写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的交换错词本",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和交换错词本带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把交换错词本写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成交换错词本",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于交换错词本的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 21,
+    "title": "唐小满线 02：操场打卡",
+    "subtitle": "黄昏十词挑战",
+    "scene": "操场黄昏",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "晚饭前，唐小满在操场边拦住你，举起手机上的打卡页面，笑得很有底气。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，今天的格子还没亮。背完十个词才能放你走。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "学妹现在管得这么严格？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "因为学长答应过要陪我。说过的话，当然要算数。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的操场边打卡",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和操场边打卡带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把操场边打卡写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的操场边打卡",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和操场边打卡带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把操场边打卡写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成操场边打卡",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于操场边打卡的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 22,
+    "title": "唐小满线 03：易混词警报",
+    "subtitle": "差一个字母",
+    "scene": "自习室",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "自习室桌面上排着一串便利贴。唐小满把几个易混词写得特别大，神情难得严肃。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，我这次真的要记住。不能每次都靠你提醒。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "那我负责出题，答错就加练。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "可以。不过答对的话，学长也要认真夸我。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的易混词便利贴",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和易混词便利贴带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把易混词便利贴写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的易混词便利贴",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和易混词便利贴带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把易混词便利贴写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成易混词便利贴",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于易混词便利贴的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 23,
+    "title": "唐小满线 04：一起补课",
+    "subtitle": "咖啡店角落",
+    "scene": "咖啡店",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "咖啡店里有些吵。唐小满把一只耳机递给你，里面循环播放着她录下的单词清单。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，我自己录的。虽然有几个音可能不太准，你不许笑。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "那我听完再帮你改。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "嗯。耳机线有点短，学长再靠近一点点就好。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的共享耳机",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和共享耳机带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把共享耳机写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的共享耳机",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和共享耳机带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把共享耳机写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成共享耳机",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于共享耳机的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 24,
+    "title": "唐小满线 05：倒计时贴纸",
+    "subtitle": "一百天计划",
+    "scene": "图书馆",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "唐小满在词汇书内页贴了一排倒计时贴纸，每完成一天就撕下一张。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，你看。等最后一张撕掉，我们就会比现在厉害很多。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "如果中间有一天状态不好呢？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "那就一起慢一点。可是不许一个人偷偷放弃。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的倒计时墙",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和倒计时墙带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把倒计时墙写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的倒计时墙",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和倒计时墙带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把倒计时墙写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成倒计时墙",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于倒计时墙的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 25,
+    "title": "唐小满线 06：低分之后",
+    "subtitle": "失落的消息",
+    "scene": "夜晚宿舍窗边",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "模拟考成绩出来后，唐小满一整天没有发打卡消息。晚上，她终于发来一句：学长，我是不是太笨了。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "明明已经很努力了，分数还是不好看。我今天有点不想装作元气满满。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "那就不用装。今晚我陪你从最简单的词开始。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "……谢谢学长。明天我会重新打起精神，但今晚让我依赖你一下。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的陪她重新开始",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和陪她重新开始带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把陪她重新开始写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的陪她重新开始",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和陪她重新开始带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把陪她重新开始写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成陪她重新开始",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于陪她重新开始的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 26,
+    "title": "唐小满线 07：换我陪你",
+    "subtitle": "反过来的监督",
+    "scene": "考场",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "你的模拟考也失利了。走出教室时，唐小满没有像往常一样闹你，只把热饮递到你手里。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，这次换我说：一次分数不代表什么。你教过我的。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "学妹长大了。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "所以学长偶尔也可以依赖我。只许偶尔哦，不然我会太得意。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的递来的热饮",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和递来的热饮带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把递来的热饮写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的递来的热饮",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和递来的热饮带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把递来的热饮写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成递来的热饮",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于递来的热饮的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 27,
+    "title": "唐小满线 08：最后一页",
+    "subtitle": "写满批注的礼物",
+    "scene": "结局场景",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "考试结束后，唐小满把那本厚厚的错词本塞给你。最后一页不是单词，而是一行认真写下的话。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，这次换我来陪你复习。以后遇到难的事，也一起。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "这是新的打卡约定？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "嗯。长期有效。学长不许反悔。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的错词本最后一页",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和错词本最后一页带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把错词本最后一页写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的错词本最后一页",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和错词本最后一页带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把错词本最后一页写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成错词本最后一页",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于错词本最后一页的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 28,
+    "title": "公共主线 01：第一次模拟考试",
+    "subtitle": "三人的复盘会",
+    "scene": "考场",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "第一次模拟考结束，三份成绩单摊在活动室桌面。进步和失误都无处隐藏。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，今天不只看分数。我们把最容易丢分的词重新整理一遍。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "这次我想把大家的错题都接住。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "好。那我也把自己的紧张交给你一点。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的第一次模拟考",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和第一次模拟考带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把第一次模拟考写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的第一次模拟考",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和第一次模拟考带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把第一次模拟考写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成第一次模拟考",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于第一次模拟考的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 29,
+    "title": "公共主线 02：英语社经费危机",
+    "subtitle": "一起守住活动室",
+    "scene": "英语社活动室",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "活动室可能被收回的消息来得突然。桌上堆满申请材料，原本的复习计划被迫暂停。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，这里不能消失。我们的打卡墙还没有贴满呢。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "先把申请书需要的英文说明写好。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "嗯！我负责整理，学长负责陪我坚持到最后。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的经费申请书",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和经费申请书带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把经费申请书写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的经费申请书",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和经费申请书带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把经费申请书写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成经费申请书",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于经费申请书的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 30,
+    "title": "公共主线 03：校级英语演讲",
+    "subtitle": "所有人的舞台",
+    "scene": "英语社活动室",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "校级演讲成为保住活动室的关键。彩排结束后，林知夏合上计时器，表情比平时更认真。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "学弟，你的发音还有两处不稳。但比第一次见面时，已经像样很多。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "这是林学姐版本的鼓励？",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "别得寸进尺。正式上台前，我会再陪你练一遍。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的演讲彩排",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和演讲彩排带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把演讲彩排写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的演讲彩排",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和演讲彩排带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把演讲彩排写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成演讲彩排",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于演讲彩排的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 31,
+    "title": "公共主线 04：一百天倒计时",
+    "subtitle": "写下共同目标",
+    "scene": "自习室",
+    "character": "su",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "倒计时白板翻到一百天。活动室安静了一会儿，每个人都在那串数字前停下目光。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "学弟，一百天听起来很长，真正走起来却很快。别把自己逼得太紧。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "那学姐也要答应我，累的时候说出来。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "苏晚晴",
+        "text": "好。我们互相监督，也互相照顾。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的倒计时白板",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和倒计时白板带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把倒计时白板写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的倒计时白板",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和倒计时白板带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把倒计时白板写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成倒计时白板",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于倒计时白板的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 32,
+    "title": "公共主线 05：最后的路线选择",
+    "subtitle": "最在意的人",
+    "scene": "图书馆",
+    "character": "tang",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "图书馆只剩一个靠窗座位。你翻开词汇书时，发现里面夹着三张不同颜色的便签。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "学长，最近总觉得时间过得好快。考试结束以后，我们还会像现在这样见面吗？",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "有些约定不会因为考试结束就作废。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "唐小满",
+        "text": "那我先记住这句话。学长以后不许赖账。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的留给谁的位置",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和留给谁的位置带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把留给谁的位置写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的留给谁的位置",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和留给谁的位置带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把留给谁的位置写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成留给谁的位置",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于留给谁的位置的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  },
+  {
+    "id": 33,
+    "title": "公共主线 06：考研前夜",
+    "subtitle": "最后十个词",
+    "scene": "夜晚宿舍窗边",
+    "character": "lin",
+    "dialogue": [
+      {
+        "speaker": "旁白",
+        "text": "考研前夜，群聊里没有人继续刷题。最后十个词安静地躺在你面前，像一路走来的坐标。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "学弟，今晚答完就休息。你已经做得足够多了。别让我隔着屏幕还要担心你。",
+        "expression": "serious"
+      },
+      {
+        "speaker": "你",
+        "text": "明天之后，好像一切都会改变。",
+        "expression": "normal"
+      },
+      {
+        "speaker": "林知夏",
+        "text": "会改变。但有些位置、一些约定，还有想见的人，不会。",
+        "expression": "shy"
+      }
+    ],
+    "word_ids": [
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362
+    ],
+    "choices": [
+      {
+        "text": "认真回应她提到的考研前夜",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和考研前夜带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把考研前夜写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ],
+    "choice_rounds": [
+      [
+        {
+          "text": "认真回应她提到的考研前夜",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 1
+          }
+        },
+        {
+          "text": "用一句玩笑缓和考研前夜带来的紧张",
+          "effect": {
+            "affection": 2,
+            "trust": 1,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "先把考研前夜写进今天的复习记录",
+          "effect": {
+            "affection": 1,
+            "trust": 3,
+            "resonance": 1
+          }
+        }
+      ],
+      [
+        {
+          "text": "问她愿不愿意和你一起完成考研前夜",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "安静陪她把话说完",
+          "effect": {
+            "affection": 2,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把自己的不安也坦率告诉她",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ],
+      [
+        {
+          "text": "答应不会忘记关于考研前夜的约定",
+          "effect": {
+            "affection": 3,
+            "trust": 2,
+            "resonance": 3
+          }
+        },
+        {
+          "text": "轻声告诉她：我会留下",
+          "effect": {
+            "affection": 3,
+            "trust": 3,
+            "resonance": 2
+          }
+        },
+        {
+          "text": "把这份心情藏进接下来的十个词里",
+          "effect": {
+            "affection": 2,
+            "trust": 2,
+            "resonance": 3
+          }
+        }
+      ]
+    ],
+    "unlock_score": 60
+  }
+]

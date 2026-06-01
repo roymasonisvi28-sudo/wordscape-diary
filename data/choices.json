@@ -1,0 +1,959 @@
+[
+  {
+    "chapter": 1,
+    "choices": [
+      {
+        "text": "认真回应她提到的分班测试成绩单",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和分班测试成绩单带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把分班测试成绩单写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "choices": [
+      {
+        "text": "认真回应她提到的英语社报名表",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和英语社报名表带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把英语社报名表写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "choices": [
+      {
+        "text": "认真回应她提到的第一次十词约定",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和第一次十词约定带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把第一次十词约定写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "choices": [
+      {
+        "text": "认真回应她提到的借走错题本",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和借走错题本带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把借走错题本写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "choices": [
+      {
+        "text": "认真回应她提到的模拟题赌约",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和模拟题赌约带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把模拟题赌约写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "choices": [
+      {
+        "text": "认真回应她提到的共撑一把伞",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和共撑一把伞带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把共撑一把伞写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "choices": [
+      {
+        "text": "认真回应她提到的闭馆铃声",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和闭馆铃声带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把闭馆铃声写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "choices": [
+      {
+        "text": "认真回应她提到的放慢十分钟",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和放慢十分钟带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把放慢十分钟写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "choices": [
+      {
+        "text": "认真回应她提到的未发送的关心",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和未发送的关心带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把未发送的关心写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 10,
+    "choices": [
+      {
+        "text": "认真回应她提到的银色书签",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和银色书签带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把银色书签写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 11,
+    "choices": [
+      {
+        "text": "认真回应她提到的考场前的约定",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和考场前的约定带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把考场前的约定写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 12,
+    "choices": [
+      {
+        "text": "认真回应她提到的靠窗座位",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和靠窗座位带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把靠窗座位写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 13,
+    "choices": [
+      {
+        "text": "认真回应她提到的演讲稿最后一段",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和演讲稿最后一段带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把演讲稿最后一段写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 14,
+    "choices": [
+      {
+        "text": "认真回应她提到的咖啡店改稿",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和咖啡店改稿带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把咖啡店改稿写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 15,
+    "choices": [
+      {
+        "text": "认真回应她提到的替她收拾资料",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和替她收拾资料带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把替她收拾资料写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 16,
+    "choices": [
+      {
+        "text": "认真回应她提到的深夜通话",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和深夜通话带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把深夜通话写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 17,
+    "choices": [
+      {
+        "text": "认真回应她提到的上台前握手",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和上台前握手带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把上台前握手写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 18,
+    "choices": [
+      {
+        "text": "认真回应她提到的不再逞强",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和不再逞强带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把不再逞强写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 19,
+    "choices": [
+      {
+        "text": "认真回应她提到的钥匙与告白",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和钥匙与告白带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把钥匙与告白写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 20,
+    "choices": [
+      {
+        "text": "认真回应她提到的交换错词本",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和交换错词本带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把交换错词本写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 21,
+    "choices": [
+      {
+        "text": "认真回应她提到的操场边打卡",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和操场边打卡带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把操场边打卡写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 22,
+    "choices": [
+      {
+        "text": "认真回应她提到的易混词便利贴",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和易混词便利贴带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把易混词便利贴写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 23,
+    "choices": [
+      {
+        "text": "认真回应她提到的共享耳机",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和共享耳机带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把共享耳机写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 24,
+    "choices": [
+      {
+        "text": "认真回应她提到的倒计时墙",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和倒计时墙带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把倒计时墙写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 25,
+    "choices": [
+      {
+        "text": "认真回应她提到的陪她重新开始",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和陪她重新开始带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把陪她重新开始写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 26,
+    "choices": [
+      {
+        "text": "认真回应她提到的递来的热饮",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和递来的热饮带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把递来的热饮写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 27,
+    "choices": [
+      {
+        "text": "认真回应她提到的错词本最后一页",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和错词本最后一页带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把错词本最后一页写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 28,
+    "choices": [
+      {
+        "text": "认真回应她提到的第一次模拟考",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和第一次模拟考带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把第一次模拟考写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 29,
+    "choices": [
+      {
+        "text": "认真回应她提到的经费申请书",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和经费申请书带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把经费申请书写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 30,
+    "choices": [
+      {
+        "text": "认真回应她提到的演讲彩排",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和演讲彩排带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把演讲彩排写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 31,
+    "choices": [
+      {
+        "text": "认真回应她提到的倒计时白板",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和倒计时白板带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把倒计时白板写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 32,
+    "choices": [
+      {
+        "text": "认真回应她提到的留给谁的位置",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和留给谁的位置带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把留给谁的位置写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  },
+  {
+    "chapter": 33,
+    "choices": [
+      {
+        "text": "认真回应她提到的考研前夜",
+        "effect": {
+          "affection": 3,
+          "trust": 2,
+          "resonance": 1
+        }
+      },
+      {
+        "text": "用一句玩笑缓和考研前夜带来的紧张",
+        "effect": {
+          "affection": 2,
+          "trust": 1,
+          "resonance": 2
+        }
+      },
+      {
+        "text": "先把考研前夜写进今天的复习记录",
+        "effect": {
+          "affection": 1,
+          "trust": 3,
+          "resonance": 1
+        }
+      }
+    ]
+  }
+]
