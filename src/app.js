@@ -37,7 +37,7 @@
   function toast(text) { const el = document.getElementById("toast"); if (!el) return; el.textContent = text; el.classList.add("show"); setTimeout(() => el.classList.remove("show"), 1300); }
   function render(next = view) {
     clearTimers(); view = next;
-    if (state.banana.affection >= 50) return bananaConfession();
+    if (state.banana.affection >= 100) return bananaConfession();
     ({home, characters, memory, stats, settings, daily, chapters}[view] || home)();
   }
   function home() {
@@ -67,7 +67,7 @@
       return `<section class="event-group"><h3>${character.name}的特别回忆 <small>${unlocked.length}/${events.length}</small></h3><div class="event-list">${events.map(event => unlocked.includes(event.id) ? `<button class="event-card unlocked" data-special="${event.id}"><b>${event.title}</b><span>${event.summary}</span><small>点击回看 · 心动值 ${event.threshold} 解锁</small></button>` : `<div class="event-card locked-event"><b>尚未解锁</b><span>继续陪伴她，让关系再靠近一点。</span><small>心动值 ${event.threshold} 解锁</small></div>`).join("")}</div></section>`;
     }).join("");
   }
-  function bananaArchiveCard() { const b = state.banana; return `<section class="mystery-archive"><div class="section-title"><div><p class="eyebrow">SPECIAL ENCOUNTER</p><h2>神秘乱入者</h2></div><span class="mystery-badge">隐藏角色</span></div><article class="banana-profile"><div class="banana-profile-image"><img src="${bananaImage()}" alt="香蕉君"></div><div><small>调皮的超纲词突击者</small><h3>香蕉君 <em>乱入角色</em></h3><p>他会在主线里突然出现，用超纲词汇打断你的约会节奏。答对，他会暂时离开；答错，反而会让他更开心。</p><label>特殊好感 <b>${b.affection}</b>/50 · 答错才会上涨</label><div class="meter banana-meter"><i style="width:${Math.min(100, b.affection * 2)}%"></i></div><p class="meta">已经乱入 ${b.encounters} 次 · 累计答错 ${b.wrong} 题<br>主题：超纲词汇、随机干扰、隐藏结局</p></div></article></section>`; }
+  function bananaArchiveCard() { const b = state.banana; return `<section class="mystery-archive"><div class="section-title"><div><p class="eyebrow">SPECIAL ENCOUNTER</p><h2>神秘乱入者</h2></div><span class="mystery-badge">隐藏角色</span></div><article class="banana-profile"><div class="banana-profile-image"><img src="${bananaImage()}" alt="香蕉君"></div><div><small>调皮的超纲词突击者</small><h3>香蕉君 <em>乱入角色</em></h3><p>他会偶尔在章节尾声出现，用超纲词汇打断你的约会节奏。答对，他会暂时离开；答错，反而会让他更开心。</p><label>特殊好感 <b>${b.affection}</b>/100 · 答错才会上涨</label><div class="meter banana-meter"><i style="width:${Math.min(100, b.affection)}%"></i></div><p class="meta">已经乱入 ${b.encounters} 次 · 累计答错 ${b.wrong} 题<br>主题：超纲词汇、随机干扰、隐藏结局</p></div></article></section>`; }
   function avalancheArchiveCard() { const a = state.avalanche; return `<section class="mystery-archive avalanche-archive"><div class="section-title"><div><p class="eyebrow">RACE EASTER EGG</p><h2>彩蛋角色档案</h2></div><span class="mystery-badge avalanche-badge">雪崩竞速</span></div><article class="banana-profile avalanche-profile"><div class="banana-profile-image"><img src="${avalancheImage()}" alt="张雪崩老师"></div><div><small>从天而降的赛跑挑战者</small><h3>张雪崩老师 <em>小游戏彩蛋角色</em></h3><p>他会在主线交流中突然出现，把画面变成十秒横版赛道。累计答对五道核心词题，才能在终点前跑赢他。</p><label>雪崩好感 <b>${a.affection}</b>/5 · 老师跑赢才会上涨</label><div class="meter avalanche-meter"><i style="width:${Math.min(100, a.affection * 20)}%"></i></div><p class="meta">已经乱入 ${a.encounters} 次 · 老师获胜 ${a.losses} 次 · 玩家获胜 ${a.wins} 次<br>奖励：${a.spriteUnlocked ? "已收到张雪崩老师送出的冰镇雪碧" : "好感拉满后解锁一瓶冰镇雪碧"}<br>主题：核心词汇、十秒竞速、Q 萌平台赛道</p></div></article></section>`; }
   function jieArchiveCard() { const j = state.jie; return `<section class="mystery-archive jie-archive"><div class="section-title"><div><p class="eyebrow">MYSTERY RETEST</p><h2>彩蛋角色档案</h2></div><span class="mystery-badge jie-badge">错词补考</span></div><article class="banana-profile jie-profile"><div class="banana-profile-image"><img src="${jieImage()}" alt="杰哥"></div><div><small>神秘空间里的补考监督者</small><h3>杰哥 <em>单次错词彩蛋</em></h3><p>当本章出现错词时，他有较高概率将你拉进神秘空间，让你重新回答其中一道题。无论结果如何，每章最多出现一次。</p><p class="meta">已经出现 ${j.encounters} 次 · 补考答对 ${j.corrected} 次 · 补考仍错 ${j.missed} 次<br>主题：本章错词、神秘空间、电动邀请</p></div></article></section>`; }
   function burgerArchiveCard() { const b = state.burger; return `<section class="mystery-archive burger-archive"><div class="section-title"><div><p class="eyebrow">BURGER SHOWDOWN</p><h2>汉堡争夺档案</h2></div><span class="mystery-badge burger-badge">满分彩蛋</span></div><div class="burger-profiles"><article class="burger-profile"><img src="${fatcatImage()}" alt="fatcat"><h3>fatcat</h3><p>蓝紫色汉堡争夺者。满分章节后可以选择加入他的阵营。</p></article><article class="burger-profile"><img src="${kingImage()}" alt="king"><h3>king</h3><p>向资本发起挑战的对手。选择他的阵营也会触发专属宣言。</p></article></div><p class="meta">已经触发 ${b.encounters} 次 · fatcat 获胜 ${b.fatcatWins} 次 · king 获胜 ${b.kingWins} 次</p></section>`; }
@@ -160,7 +160,7 @@
   function maybeBananaEncounter() {
     if (!currentChapter || state.banana.checkedChapters[currentChapter.id]) return false;
     state.banana.checkedChapters[currentChapter.id] = true; store();
-    if (Math.random() > .78) return false;
+    if (Math.random() >= .2) return false;
     bananaQuestion(); return true;
   }
   function bananaImage() { return "assets/characters/banana-kun.jpg?v=1"; }
@@ -168,15 +168,15 @@
     const word = BANANA_WORDS[Math.floor(Math.random() * BANANA_WORDS.length)];
     const pool = [word, ...BANANA_WORDS.filter(item => item.id !== word.id).sort(() => Math.random() - .5).slice(0, 3)].sort(() => Math.random() - .5);
     state.banana.encounters++; store();
-    app.innerHTML = `<main class="banana-event"><div class="banana-card"><img src="${bananaImage()}" alt="香蕉君"><p class="eyebrow">神秘乱入 · 超纲突击</p><h1>香蕉君</h1><p>嘿，先别急着和她聊天。答对这题，我就识趣地消失。</p><h2><strong>${word.word}</strong> 是什么意思？</h2><div class="options">${pool.map(item => `<button data-banana-answer="${item.id}">${item.meaning}</button>`).join("")}</div><small>香蕉君好感 ${state.banana.affection}/50 · 答错会让他更来劲</small></div></main>`;
+    app.innerHTML = `<main class="banana-event"><div class="banana-card"><img src="${bananaImage()}" alt="香蕉君"><p class="eyebrow">神秘乱入 · 超纲突击</p><h1>香蕉君</h1><p>嘿，先别急着和她聊天。答对这题，我就识趣地消失。</p><h2><strong>${word.word}</strong> 是什么意思？</h2><div class="options">${pool.map(item => `<button data-banana-answer="${item.id}">${item.meaning}</button>`).join("")}</div><small>香蕉君好感 ${state.banana.affection}/100 · 答错会让他更来劲</small></div></main>`;
     document.querySelectorAll("[data-banana-answer]").forEach(button => button.onclick = () => answerBanana(+button.dataset.bananaAnswer, word));
   }
   function answerBanana(id, word) {
     const ok = id === word.id;
     if (ok) state.banana.affection = Math.max(0, state.banana.affection - 1);
-    else { state.banana.wrong++; state.banana.affection = Math.min(50, state.banana.affection + 1); }
+    else { state.banana.wrong++; state.banana.affection = Math.min(100, state.banana.affection + 1); }
     store();
-    if (state.banana.affection >= 50) return bananaConfession();
+    if (state.banana.affection >= 100) return bananaConfession();
     if (ok) return bananaExit("居然答对了。行吧，这次先把时间还给你们。");
     bananaTakeover(word);
   }
@@ -190,7 +190,7 @@
     const timer = setInterval(() => { seconds--; const counter = document.getElementById("banana-countdown"); if (counter) counter.textContent = seconds; if (seconds <= 0) { clearInterval(timer); bananaExit("好啦，不逗你了。下次可要答对。"); } }, 1000);
   }
   function bananaConfession() {
-    app.innerHTML = `<main class="banana-takeover banana-confession"><img src="${bananaImage()}" alt="香蕉君兴奋告白"><div><p class="eyebrow">隐藏结局 · 香蕉君好感 MAX</p><h1>抓到你了</h1><p>答错五十次还不躲着我，你一定是在等我出现吧？从现在开始，屏幕归我了。</p><button class="primary" id="banana-new-game">开始新的游戏</button></div></main>`;
+    app.innerHTML = `<main class="banana-takeover banana-confession"><img src="${bananaImage()}" alt="香蕉君兴奋告白"><div><p class="eyebrow">隐藏结局 · 香蕉君好感 MAX</p><h1>抓到你了</h1><p>答错一百次还不躲着我，你一定是在等我出现吧？从现在开始，屏幕归我了。</p><button class="primary" id="banana-new-game">开始新的游戏</button></div></main>`;
     document.getElementById("banana-new-game").onclick = () => { if (confirm("确认开始新的游戏？当前进度会被清空。")) { localStorage.removeItem(KEY); state = defaultState(); render("home"); } };
   }
   function choice() { const c = currentChapter, rounds = c.choice_rounds || [c.choices], options = rounds[choiceRound]; state.checkpoint = { chapter: c.id, stage: "choice", line: c.dialogue.length, choiceRound }; store(); app.innerHTML = `<main class="choice bg-${sceneClass(c.scene)}"><section><p class="eyebrow">你的选择 · ${choiceRound + 1}/${rounds.length}</p><h2>这一刻，你会怎么回应？</h2>${options.map((x,i) => `<button data-choice="${i}">${x.text}</button>`).join("")}</section></main><div id="toast"></div>`; document.querySelectorAll("[data-choice]").forEach(b => b.onclick = () => applyChoice(options[+b.dataset.choice])); }
