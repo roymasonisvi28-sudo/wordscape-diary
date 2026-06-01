@@ -30,7 +30,7 @@
   }
   function home() {
     const learned = Object.keys(state.learned).length;
-    shell(`<section class="hero"><div><p class="eyebrow">张哲英语社</p><h1>词境恋习日记</h1><p>在一次次并肩自习里，把陌生单词写进记忆，也写进属于你的校园故事。</p><div class="actions"><button class="primary" id="continue">继续游戏</button><button id="new">新的开始</button><button data-go="daily">今日学习</button></div></div><div class="hero-card"><span>今日问候</span><strong>${DATA.characters[state.chapter % 3].name}</strong><p>${DATA.characters[state.chapter % 3].greeting}</p></div></section>
+    shell(`<section class="hero"><div><p class="eyebrow">佳瑞英语社</p><h1>词境恋习日记</h1><p>在一次次并肩自习里，把陌生单词写进记忆，也写进属于你的校园故事。</p><div class="actions"><button class="primary" id="continue">继续游戏</button><button id="new">新的开始</button><button data-go="daily">今日学习</button></div></div><div class="hero-card"><span>今日问候</span><strong>${DATA.characters[state.chapter % 3].name}</strong><p>${DATA.characters[state.chapter % 3].greeting}</p></div></section>
     <section class="dashboard"><article><b>${learned}</b><span>已接触单词</span></article><article><b>${Object.keys(state.wrong).length}</b><span>记忆回廊</span></article><article><b>${state.streak}</b><span>连续学习天数</span></article><article><b>${state.unlocked}/33</b><span>已解锁章节</span></article></section>
     <section><div class="section-title"><h2>最近的约定</h2><button data-go="chapters">章节列表</button></div>${characterCards(true)}</section>`);
     bindNav(); document.getElementById("continue").onclick = resumeGame;
